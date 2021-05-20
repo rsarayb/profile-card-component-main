@@ -43,7 +43,7 @@
     </div> 
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Raquel Betancourt</a>.
+      Coded by <a href="https://raquelbetancourt.herokuapp.com">Raquel Betancourt</a>.
     </div>
   </div>
 
