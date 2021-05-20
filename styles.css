@@ -1,0 +1,143 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.wrapper {
+    background: hsl(185, 75%, 39%);
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    position: relative;
+}
+
+.general-container {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+
+.pattern-top {
+    position: fixed;
+    bottom:400px;
+    left: -200px;
+    width: 800px;
+    
+}
+
+.pattern-bottom {
+    position: fixed;
+    top:300px;
+    right:-250px;
+    width: 800px;
+  
+    
+}
+
+.profile-card {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.profile-card-container {
+    background: #fff;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    z-index: 10;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    box-shadow: 0 10px 10px rgb(0,0,0,.1);
+}
+
+.profile-top {
+    grid-row: 1/2;
+    background-image: url(images/bg-pattern-card.svg);
+    border-top-left-radius:inherit;
+    border-top-right-radius:inherit;
+    background-position: center;
+    background-size: cover;
+}
+
+.profile-bottom {
+    grid-row: 2/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.profile-stats {
+    display: flex;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    top:0; left:0; bottom: 0; right: 0; margin:auto;
+    transform: translateY(-60%);
+
+}
+
+.profile-stats {
+    border-top: 1px solid hsla(0, 0%, 59%, 0.241);
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.numbers, .name {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%)
+}
+
+.stats-title {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: hsl(0, 0%, 59%);
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    margin-top: 15%;
+
+}
+
+.profile-info >* {
+    margin: 6px 0;
+}
+
+.place, .age {
+    color:hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+.numbers {
+    margin-bottom: 7px;
+}
+
+.attribution {
+    position: absolute;
+    top: 10px;
+}
